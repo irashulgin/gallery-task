@@ -1,5 +1,5 @@
 import React from "react";
-import PhotoItem from "./PhotoItem";
+import BottomPhotoItem from "./BottomPhotoItem";
 import { TagData } from "../interfaces";
 import { useTags } from "../hooks/use-tags";
 import { useImages } from "../hooks/use-images";
@@ -26,7 +26,7 @@ export const BottomPanel: React.FC = () => {
           <InnerDiv key={tag.value}>
             <StyledDiv color={tag.color}>{tag.label}</StyledDiv>
             {tag.photos.map((img: string) => (
-              <PhotoItem
+              <BottomPhotoItem
                 key={img}
                 id={img}
                 onRemoveImg={removeImg.bind(null, {

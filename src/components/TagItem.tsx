@@ -8,7 +8,6 @@ import { StyledButton } from "./TagsModalStyle";
 const TagItem: React.FC<{
   label: string;
   onRemoveTag?: () => void;
-  // onClick:()=>void;
   color: string;
   value: string;
 }> = (props) => {

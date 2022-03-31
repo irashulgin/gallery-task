@@ -2,9 +2,9 @@ import { ImBin } from "react-icons/im";
 import { useEffect, useState } from "react";
 import { ImageData } from "../interfaces";
 import { useImages } from "../hooks/use-images";
-import { StyledItem } from "./PhotoItemStyle";
+import { StyledItem } from "./BottomPhotoItemStyle";
 
-const PhotoItem: React.FC<{ id: string; onRemoveImg: () => void }> = (
+const BottomPhotoItem: React.FC<{ id: string; onRemoveImg: () => void }> = (
   props
 ) => {
   const { initialImages } = useImages();
@@ -26,4 +26,4 @@ const PhotoItem: React.FC<{ id: string; onRemoveImg: () => void }> = (
   );
 };
 
-export default PhotoItem;
+export default BottomPhotoItem;

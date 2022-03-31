@@ -10,7 +10,6 @@ export const  StyledDiv = styled.div<{color:string}>`
 export const ContainerDiv = styled.div`
     display: flex;
     flex-wrap: wrap;
-    margin-left: 30rem;
     padding: 5px;
     justify-content: flex-start;
     height: 10rem;

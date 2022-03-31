@@ -11,7 +11,6 @@ export const Tags: React.FC = () => {
   const { unTagImage } = useImages();
 
   const removeTagById = (tagId: string) => {
-    debugger;
     removeTag(tagId);
     const currentTag = tags.find((item) => item.value === tagId);
 
